@@ -1,4 +1,5 @@
 // problem link: https://leetcode.com/problems/two-sum/
+// 17-06-2023 (Easy)
 
 #include <bits/stdc++.h>
 using namespace std;

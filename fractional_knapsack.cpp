@@ -1,4 +1,5 @@
 // problem link: https://www.codingninjas.com/codestudio/problems/975286
+// 17-06-2023 (Easy)
 
 #include <bits/stdc++.h>
 using namespace std;

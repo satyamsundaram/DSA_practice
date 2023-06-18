@@ -1,4 +1,5 @@
 // problem link: https://www.codingninjas.com/codestudio/problems/job-sequencing-problem_1169460
+// 17-06-2023 (Medium)
 
 #include <bits/stdc++.h>
 using namespace std;
