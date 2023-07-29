@@ -6,7 +6,9 @@ using namespace std;
 
 class Solution {
 public:
-    // // TC: O(N^2), SC: O(1)
+    // naive: check a pair of elements in two loops, if they add up to target
+    // TC: O(n^2)
+    // SC: O(1)
     // vector<int> twoSum(vector<int>& nums, int target) {
     //     int n = nums.size();
     //     for(int i=0; i<n-1; i++) {
@@ -18,15 +20,16 @@ public:
     //     return {-1,-1};
     // }
 
-    // TC: O(N), SC: O(N)
+    // optimized: in a single loop, check if target-nums[i] exists in unordered_map, else store nums[i]->i in it
+    // TC: O(n)
+    // SC: O(n)
     vector<int> twoSum(vector<int>& nums, int target) {
         unordered_map<int, int> um;
-
         for(int i=0; i<nums.size(); i++) {
-            if(um.find(target-nums[i]) == um.end())
-                um[nums[i]] = i;
+            if(um.find(target-nums[i])==um.end())
+                um[nums[i]]=i;
             else return {i, um[target-nums[i]]};
         }
-        return {-1,-1};
+        return {};
     }
 };
